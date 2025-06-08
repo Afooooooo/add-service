@@ -1,0 +1,109 @@
+<!-- Font & Stylesheet -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link href="styles.css" rel="stylesheet" />
+<meta charset="UTF-8">
+<title>پرستار سلامت</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Select2 JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+     <!-- هدر -->
+     <div class="header-tools">
+      <div class="search-box">
+        <span class="material-icons">جستجو</span>
+        <input type="text" placeholder="" />
+      </div>
+      <button class="icon-btn">
+        <span class="material-icons">person</span>
+        <span class="btn-text">مدیر</span>
+      </button>
+      <button class="icon-btn">
+        <span class="material-icons">settings</span>
+      </button>
+      <button class="icon-btn">
+        <span class="material-icons">notifications</span>
+      </button>
+    </div>
+
+<div class="container">
+  <!-- سایدبار -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <span>پرستار سلامت </span>
+    </div>
+    <ul class="sidebar-menu">
+      <li class="active">بیماران</li>
+      <li>اپراتورها</li>
+       <li>پرستاران</li>
+      <li>سوپروایزرها</li>
+      <li>لیست درخواست‌ها</li>
+      <li>مدیریت سرویس‌ها</li>
+    </ul>
+    <div class="sidebar-footer">
+      <button class="profile-btn">
+        <span>پروفایل</span>
+        <img src="img_avatar.png" alt="پروفایل" class="profile-img">
+      </button>
+      <div class="sidebar-desc">
+         پرستار سلامت<br>بیماران 
+      </div>
+    </div>
+  </aside>
+
+
+
+
+  
+
+  <div class="hero-container">
+    <div class="hero-header">
+      <!-- Left: Content -->
+      <div class="hero-content">
+        <div class="hero-title">
+          <span class="accent">ثبت درخواست جدید</span>
+        </div>
+        <form class="hero-form" autocomplete="off">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patient">بیمار</label>
+              <select id="patient" name="patient"></select>
+            </div>
+            <div class="form-group">
+              <label for="service">خدمت درخواستی</label>
+              <select id="service" name="service" style="width:100%;">
+                <option></option>
+                <option>کمک‌های اولیه</option>
+                <option>تعویض پانسمان</option>
+                <option>تزریقات</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="time">زمان</label>
+            <input type="time" id="time" name="time" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="location">مکان</label>
+            <input type="text" id="location" name="location" placeholder="">
+          </div>
+  
+          <!-- Submit button -->
+          <button class="submit-btn" type="submit">ثبت درخواست</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+    
+ 
+    
+    
+    
+
+    
